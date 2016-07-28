@@ -21,5 +21,6 @@ Have a look at the:
 
 ### To Be Improved
 1. Many of the sentiment analysis steps can be re-structured to function calls.
+1. More interviews should be analysed to make the training set sizes comparable.
 2. Use of bigrams and trigrams for capturing sentiments.
 3. Research on other ways to form a reliable and comprehensive corpus.
