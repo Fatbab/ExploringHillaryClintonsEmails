@@ -14,7 +14,6 @@ To narrow down the volume of work, specific keywords are picked and searched for
 4. Sentiment Analysis 
 
 ### Results
-Have a look at the:    
 1. Wrodclouds     
 2. Sentiment charts    
 3. Interviews and emails dendrograms    
