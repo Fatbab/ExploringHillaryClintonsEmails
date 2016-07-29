@@ -10,7 +10,7 @@ library(RSQLite)
 
 # Connect to local sqlite db
 # This maybe only on my machine but due to credential issues, R could only access sqlite from /tmp/ folder 
-# 
+ 
 db <- dbConnect(dbDriver("SQLite"), "/tmp/database.sqlite")
 query1 <- dbGetQuery(db, "SELECT 'To: ' || MetaDataTo || ' [' || SUBSTR(MetadataDateSent,1,13) || ']' AS 'TextName', 
     MetaDataTo AS 'To', SUBSTR(MetadataDateSent, 1,10) AS 'Date', 
@@ -368,6 +368,7 @@ legend("topright", inset=c(-.5,0) ,legend=c("anticipation","trust","negative","p
 
 
 ## Similar Work on Emails
+### Improvement: turn these steps into function call ###
 require(quanteda)
 library(RSQLite)
 db <- dbConnect(dbDriver("SQLite"), "/tmp/database.sqlite")
