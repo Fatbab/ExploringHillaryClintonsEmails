@@ -136,6 +136,7 @@ dotchart(interviewSimil$`NPR-22Jul2009.txt`, xlab = "Cosine Similarity", main = 
 ###### Word Cloud for baseline, lease similar and most similar interviews
 ###### baseline: NPR-22Jul2009, least similar: NPR-30Jun2012, most similar: ABC-29Jan2013
 
+### Improvement: create a function to remove specific features, call it for each set of interviews instead ###
 ## baseline: NPR-22Jul2009
 npr2009file <- textfile("~/MachineLearning/CourseWork3/Data/Interviews/NPR-22Jul2009.txt", 
                         cache = FALSE)
@@ -175,6 +176,7 @@ plot(abc2013dfm,random.order = FALSE, main ="ABC-29Jan2013")
 ####################
 ##### SENTIMENT ####
 ####################
+### Improvement: Nothing really needs to be coded twice, everything in this section can be transformed to function call or far better data structure ###
 
 library("syuzhet")
 library("rJava") 
@@ -297,6 +299,7 @@ iran13txt <- paste(abctxt, cnntxt, foxtxt, nprtxt)
 ##### BAR PLOT #####
 ####################
 
+### Improvement: turn these steps into function call/loop over array/dictionary ###
 iran_s09 <- get_sentences(iran09txt)
 iran_sntm09 <- get_sentiment(iran_s09, method="syuzhet")
 iran_nrc09 <- get_nrc_sentiment(iran_s09)
